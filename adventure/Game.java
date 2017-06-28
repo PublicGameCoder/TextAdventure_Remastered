@@ -51,19 +51,18 @@ public class Game
     {
 
         // create the rooms
-        livingroom = new Room("livingroom","in the livingroom", adventure.Room.Type.Inside);
-        kitchen = new Room("kitchen","in the kitchen", Type.Inside);
-        hallway1 = new Room("hallway1","in the southside of the hallway", Type.Inside);
-        garage = new Room("garage","in the garage", Type.Inside);
-        frontgarden = new Room("frontgarden","at the front of the house", Type.Outside);
-        hallway2 = new Room("hallway2","in the northside of the hallway", Type.Inside);
-        toiletroom = new Room("toiletroom","in the toiletroom", Type.Inside);
-        basement = new Room("basement","your in the basement.\nTheres a toxic gas hanging around this place", Type.Inside);
-        upstairs = new Room("upstairs","in the upstairs", Type.Inside);
-        bathroom = new Room("bathroom","in the bathroom", Type.Inside);
-        your_bedroom = new Room("your_bedroom","in the your bedroom", Type.Inside);
-        parent_bedroom = new Room("parent_bedroom","in the parent bedroom", Type.Inside);
-
+        livingroom = new Room("livingroom","You are in the livingroom", adventure.Room.Type.Inside);
+        kitchen = new Room("kitchen","You are in the kitchen", Type.Inside);
+        hallway1 = new Room("hallway1","You are in the southside of the hallway", Type.Inside);
+        garage = new Room("garage","You are in the garage", Type.Inside);
+        frontgarden = new Room("frontgarden","You are at the front of the house", Type.Outside);
+        hallway2 = new Room("hallway2","You are in the northside of the hallway", Type.Inside);
+        toiletroom = new Room("toiletroom","You are in the toiletroom", Type.Inside);
+        basement = new Room("basement","You are in the basement.\nTheres a toxic gas hanging around this place", Type.Inside);
+        upstairs = new Room("upstairs","You are in the upstairs hallway", Type.Inside);
+        bathroom = new Room("bathroom","You are in the bathroom", Type.Inside);
+        your_bedroom = new Room("your_bedroom","You are in the your bedroom", Type.Inside);
+        parent_bedroom = new Room("parent_bedroom","You are in your parent's bedroom", Type.Inside);
         // initialise rooms
         livingroom.setExit("north", kitchen);
         livingroom.setExit("west", hallway1);
@@ -107,7 +106,8 @@ public class Game
     }
     
     private void createItems() {
-
+    	
+    	
     	// create the items
     	parentBedroomKey = new Key("Key","can be used to open the door to the parent bedroom");
     	parentBedroomKey.setWeight(0.5f);

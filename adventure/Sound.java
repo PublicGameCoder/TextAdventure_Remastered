@@ -29,8 +29,9 @@ public enum Sound {
 	     } catch (LineUnavailableException e) {
 	        e.printStackTrace();
 	     }
+	}private Sound() {
+		// TODO Auto-generated constructor stub
 	}
-    
 	static void init() {
 		values();
 	}

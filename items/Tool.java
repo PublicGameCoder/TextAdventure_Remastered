@@ -63,6 +63,7 @@ public class Tool extends Item {
 		System.out.println("You can't use that here");
 		return false;
 	}
+	
 	public void canBreakDoor(Room room1, Room room2) {
 		this.doors.put(room1, room2);
 		this.doors.put(room2, room1);

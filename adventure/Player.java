@@ -67,9 +67,9 @@ public class Player {
 	 */
 	public boolean isAlive() {
 		if (this.health <= 0.0f) {
-			return false;
+			return false;// Lager of gelijk aan 0
 		}else {
-			return true;
+			return true;// Hoger dan 0
 		}
 	}
 
