@@ -11,6 +11,6 @@ Version: 2.0
 Run_Instructions:
 -----------------
 
-Export project as a Jar file.
+Export project as a Jar file or get it [here](https://github.com/PublicGameCoder/TextAdventure_Remastered/tree/master/jars)
 
 Command prompt: `java -cp <fileDirectory of that jar> adventure.Game`
